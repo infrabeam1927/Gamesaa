@@ -1,0 +1,38 @@
+import random
+while True:
+    
+    in_user=input("enter rock(r),paper(p) or scissors(s)")
+    
+    if in_user=='r':
+        c=0
+    elif in_user=='p':
+        c=1
+    elif in_user=='s':
+        c=2  
+    else:
+        print("wrong entry game over TATA Bye Bye")
+        break
+    options=["Rock","paper","scissors"]
+    computer_actions=[0,1,2]
+    in_comp=random.choice(computer_actions)
+    print(f"\nYou chose {options[c]}, computer chose {options[in_comp]}.\n")
+    if c==in_comp:
+        print("It's a drawwwwwwwwwwwwwww")
+    elif c==0:
+        if in_comp==2:
+            print("you win leeeeeesssssssss gooooooooo")
+        elif in_comp==1:
+            print("You looose LLLLLLLLL")
+    elif c==1:
+        if in_comp==0:
+            print("you win leeeeeesssssssss gooooooooo")
+        elif in_comp==2:
+            print("You looose LLLLLLLLL")        
+    elif c==2:
+        if in_comp==1:
+            print("you win leeeeeesssssssss gooooooooo")
+        elif in_comp==0:
+            print("You looose LLLLLLLLL")
+    play_again = input("Play again? (y/n): ")
+    if play_again.lower() != "y":
+        break
