@@ -1,0 +1,21 @@
+import random
+def guessthenum(x):
+    x=int(x)
+    rn=random.randrange(1,x)
+    rn=int(rn)
+    guess=0
+    while guess!=rn:
+        guess=input(f'guess a number betweeen 1 and {x}')
+        guess=int(guess)
+        if guess<rn:
+            print("Higher Boiiiiiiiiiii, Beleiveeeeee\n")
+        if guess>rn:
+            print("LOWERRRRR BOIIIIIIIIII\n")
+    print("YAYYYYYY YOU HAVE FOUND THE NUMBER    FINNNAAAAALLLLLYYYYY\n")   
+    
+while True:
+    x=input('a number betweeen 1 and \n')
+    guessthenum(x)
+    play_again = input("Play again? (y/n): ")
+    if play_again.lower() != "y":
+        break
