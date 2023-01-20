@@ -1,2 +1,3 @@
-# ROCKPAPERSCISSORSGAME
-Tried to make a small Game on Python, very simple to understand try it out if you are bored
+# Games
+1.Tried to make a small Game on Python, Rock Paper scissors
+2.random game guessser
