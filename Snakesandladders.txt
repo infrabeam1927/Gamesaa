@@ -1,0 +1,44 @@
+import random
+c=0
+def rollagain():
+    a=random.randrange(1,6)
+    print(f'you rolled {a}')
+    return a
+print('Wanaa play snake and ladders lessss goooo ')
+input("Start rolling ? (y/n): ")
+c=c+rollagain()
+print(f'your position on the board={c}')
+while True:
+    
+    
+    play_again = input(" rolling dice? (y/n): ")
+    if play_again.lower() != "y" :
+        print('Game over L')
+        break
+    a=rollagain()
+    
+    c=c+a
+    while c>100:
+        c=c-a
+        print('re roll as >>100')
+        input(" rolling dice? (y/n): ")
+        a=rollagain()
+        c=c+a
+    print(f'your position on the board={c}')
+    if c==100 or c==50:
+        print("You havvvvvvvve woooonnnn lessssssss gooooooooooooooooo thanks for playing")
+        break
+    
+    elif c%7==0 and c>90:
+        c=c-35
+        print(f'your position on the board={c} a snake ate u at the worst position possible awwwwwwwwwww')
+    elif c%7==0 :
+        c=c-1
+        print(f'your position on the board={c} a snake ate u awwwwwwwwwww')    
+    elif c%5==0 and c<71:
+        c=c+25
+        print(f'your position on the board={c} you found a ladder lesss gooo')
+    elif c%5==0 and c>=71 and c<95 :
+        c=c+5
+        print(f'your position on the board={c} you found a ladder lesss gooo')
+    
