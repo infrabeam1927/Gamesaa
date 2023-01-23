@@ -1,6 +1,7 @@
 # Games
-1.Tried to make a small Game on Python, Rock Paper scissors
+Made a couple of simple games with the random function
+1.Rock Paper scissors
 
-2.random number guessser
+2. random number guessser
 
-3. snakes and ladders
+3. Snakes and Ladders
